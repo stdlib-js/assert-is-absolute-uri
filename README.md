@@ -291,7 +291,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-absolute-uri/main/LICENSE
 
-[uri]: http://en.wikipedia.org/wiki/URI_scheme
+[uri]: https://en.wikipedia.org/wiki/URI_scheme
 
 [rfc-3986]: https://tools.ietf.org/html/rfc3986
 
