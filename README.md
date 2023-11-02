@@ -45,26 +45,104 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/assert-is-absolute-uri
+```
 
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var isAbsoluteURI = require( '@stdlib/assert-is-absolute-uri' );
+```
+
+#### isAbsoluteURI( value )
+
+Tests whether a value is an absolute [URI][uri].
+
+```javascript
+var bool = isAbsoluteURI( 'http://example.com' );
+// returns true
+
+bool = isAbsoluteURI( './beep/boop' );
+// returns false
+```
+
+</section>
+
+<!-- /.usage -->
 
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
+<section class="notes">
 
+## Notes
+
+-   For more information regarding the URI scheme, see [RFC 3986][rfc-3986] and [Wikipedia][uri].
+-   On the distinction between URI, URL, and URN, see [The Difference Between URLs and URIs][difference-url-uri].
+
+</section>
+
+<!-- /.notes -->
 
 <!-- Package usage examples. -->
 
+<section class="examples">
 
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var isAbsoluteURI = require( '@stdlib/assert-is-absolute-uri' );
+
+var bool = isAbsoluteURI( 'https://www.google.com/' );
+// returns true
+
+bool = isAbsoluteURI( 'https://www.google.com/search?q=node.js' );
+// returns true
+
+bool = isAbsoluteURI( 'https://www.google.com#footer' );
+// returns true
+
+bool = isAbsoluteURI( '/search?q=node.js' );
+// returns false
+
+bool = isAbsoluteURI( 'C:\\Users\\nodejs\\node.js' );
+// returns false
+
+bool = isAbsoluteURI( null );
+// returns false
+```
+
+</section>
+
+<!-- /.examples -->
 
 
 <!-- Section for describing a command-line interface. -->
 
-
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -82,7 +160,7 @@ npm install -g @stdlib/assert-is-absolute-uri-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: is-absolute-uri [options] [<uri>]
@@ -110,7 +188,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ is-absolute-uri https://google.com
@@ -152,11 +230,6 @@ false
 
 <section class="related">
 
-## See Also
-
--   <span class="package-name">[`@stdlib/assert-is-absolute-uri`][@stdlib/assert-is-absolute-uri]</span><span class="delimiter">: </span><span class="description">test whether a value is an absolute URI.</span>
-
-
 </section>
 
 <!-- /.related -->
@@ -174,7 +247,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -197,8 +270,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-absolute-uri-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/assert-is-absolute-uri-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-absolute-uri.svg
+[npm-url]: https://npmjs.org/package/@stdlib/assert-is-absolute-uri
 
 [test-image]: https://github.com/stdlib-js/assert-is-absolute-uri/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/assert-is-absolute-uri/actions/workflows/test.yml?query=branch:main
