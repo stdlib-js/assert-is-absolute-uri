@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isAbsoluteURI from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-absolute-uri@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-absolute-uri/tags). For example,
+
+```javascript
 import isAbsoluteURI from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-absolute-uri@v0.2.2-esm/index.mjs';
 ```
 
@@ -98,7 +103,7 @@ bool = isAbsoluteURI( './beep/boop' );
 <body>
 <script type="module">
 
-import isAbsoluteURI from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-absolute-uri@v0.2.2-esm/index.mjs';
+import isAbsoluteURI from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-absolute-uri@esm/index.mjs';
 
 var bool = isAbsoluteURI( 'https://www.google.com/' );
 // returns true
