@@ -231,6 +231,12 @@ false
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-relative-uri`][@stdlib/assert/is-relative-uri]</span><span class="delimiter">: </span><span class="description">test whether a value is a relative URI.</span>
+
 </section>
 
 <!-- /.related -->
@@ -318,6 +324,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [difference-url-uri]: https://danielmiessler.com/study/url-uri/
 
 [standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-relative-uri]: https://github.com/stdlib-js/assert-is-relative-uri
+
+<!-- </related-links> -->
 
 </section>
 
