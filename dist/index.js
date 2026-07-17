@@ -1,5 +1,5 @@
-"use strict";var i=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var t=i(function(c,s){
-var u=require('@stdlib/assert-is-uri/dist');function n(e){return u(e)}s.exports=n
-});var o=t();module.exports=o;
+"use strict";var u=function(e,r){return function(){try{return r||e((r={exports:{}}).exports,r),r.exports}catch(i){throw (r=0, i)}};};var t=u(function(p,s){
+var n=require('@stdlib/assert-is-uri/dist');function o(e){return n(e)}s.exports=o
+});var a=t();module.exports=a;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
